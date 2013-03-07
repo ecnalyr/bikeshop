@@ -1,6 +1,13 @@
-<h1 id='logo'>
-  <%= link_to Refinery::Core.site_name, refinery.root_path %>
-</h1>
+<div id='banner_row' class="row">
+    <div id='logo' class="small-12 small-centered columns text-center">
+        <h1 id='logo'>
+          <%= link_to Refinery::Core.site_name, refinery.root_path %>
+        </h1>
+        <p><i i class="foundicon-phone"></i>(361) 993-7000</p>
+        <p><i i class="foundicon-location"></i>6020 S. Padre Island Dr., Corpus Christi, TX 78412</p>
+        <p><i i class="foundicon-clock"></i>Open today until 7pm (more. . .)</p>
+    </div>
+</div>
 <%= render(:partial => "/refinery/menu", :locals => {
              :dom_id => 'menu',
              :css => 'menu'
