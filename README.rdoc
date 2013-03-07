@@ -20,5 +20,5 @@ without issues
 3. To start the app simply start the rails server:
        rails s
 
-4. Go to http://localhost:3000/ in your browser and you'll see the funcitoning app.
+4. Go to "http://localhost:3000/" in your browser and you'll see the funcitoning app.
 
