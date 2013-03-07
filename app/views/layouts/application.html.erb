@@ -10,10 +10,18 @@
         <%= render '/refinery/header' -%>
       </header>
       <section id="page">
+        <div class="row">
+          <div class="small-12 large-12 columns">
         <%= yield %>
+          </div>
+        </div>
       </section>
       <footer>
+        <div class="row">
+          <div class="small-12 large-12 columns">
         <%= render '/refinery/footer' -%>
+          </div>
+        </div>
       </footer>
     </div>
     <%= render '/refinery/javascripts' %>
