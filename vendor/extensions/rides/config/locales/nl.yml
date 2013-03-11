@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      rides:
+        title: Rides
+    rides:
+      admin:
+        rides:
+          actions:
+            create_new: Maak een nieuwe Ride
+            reorder: Wijzig de volgorde van de Rides
+            reorder_done: Klaar met het wijzingen van de volgorde van de Rides
+          records:
+            title: Rides
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Rides. Druk op 'Maak een nieuwe Ride' om de eerste aan te maken.
+          ride:
+            view_live_html: Bekijk deze ride op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze ride
+            delete: Verwijder deze ride voor eeuwig
+      rides:
+        show:
+          other: Andere Rides
+  activerecord:
+    attributes:
+      'refinery/rides/ride':
+        name: Name
+        time: Time
+        phone: Phone
+        location: Location
+        description: Description

@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      rides:
+        title: Rides
+    rides:
+      admin:
+        rides:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Ride
+            reorder: Réordonner les Rides
+            reorder_done: Fin de réordonnancement des Rides
+          records:
+            title: Rides
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Ride. Cliquer sur "Créer un(e) nouve(au/l/lle) Ride" pour créer votre premi(er/ère) ride.'
+          ride:
+            view_live_html: Voir ce(t/tte) ride <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) ride
+            delete: Supprimer définitivement ce(t/tte) ride
+      rides:
+        show:
+          other: Autres Rides
+  activerecord:
+    attributes:
+      'refinery/rides/ride':
+        name: Name
+        time: Time
+        phone: Phone
+        location: Location
+        description: Description

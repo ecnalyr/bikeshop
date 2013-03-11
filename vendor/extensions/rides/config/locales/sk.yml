@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      rides:
+        title: Rides
+    rides:
+      admin:
+        rides:
+          actions:
+            create_new: Pridať Ride
+            reorder: Preusporiadať Rides
+            reorder_done: Koniec radenia Rides
+          records:
+            title: Rides
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Rides. Kliknite na "Pridať Ride" pre pridanie prvého ride.
+          ride:
+            view_live_html: Zobraziť náhľad ride<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť ride
+            delete: Zmazať ride
+      rides:
+        show:
+          other: Daľšie Rides
+  activerecord:
+    attributes:
+      'refinery/rides/ride':
+        name: Name
+        time: Time
+        phone: Phone
+        location: Location
+        description: Description

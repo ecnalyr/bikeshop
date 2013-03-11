@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      rides:
+        title: Rides
+#        article: masculino/femenino
+    rides:
+      admin:
+        rides:
+          actions:
+            create_new: Crear nuevo ride
+            reorder: Reordenar rides
+            reorder_done: Reordenación de rides completada
+          records:
+            title: Rides
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay rides todavía. Pulsa en "Crear nuevo Ride" para crear tu primer ride.
+          ride:
+            view_live_html: Ver este ride como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este ride
+            delete: Borrar este ride para siempre
+      rides:
+        show:
+          other: Otros rides
+  activerecord:
+    attributes:
+      'refinery/rides/ride':
+        name: Name
+        time: Time
+        phone: Phone
+        location: Location
+        description: Description

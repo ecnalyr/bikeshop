@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      rides:
+        title: Rides
+    rides:
+      admin:
+        rides:
+          actions:
+            create_new: Add New Ride
+            reorder: Reorder Rides
+            reorder_done: Done Reordering Rides
+          records:
+            title: Rides
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Rides yet. Click "Add New Ride" to add your first ride.
+          ride:
+            view_live_html: View this ride live <br/><em>(opens in a new window)</em>
+            edit: Edit this ride
+            delete: Remove this ride forever
+      rides:
+        show:
+          other: Other Rides
+  activerecord:
+    attributes:
+      'refinery/rides/ride':
+        name: Name
+        time: Time
+        phone: Phone
+        location: Location
+        description: Description

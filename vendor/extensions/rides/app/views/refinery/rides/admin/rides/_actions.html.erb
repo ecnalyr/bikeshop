@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Rides::Admin::RidesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.rides_admin_rides_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_rides_admin_ride_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Rides::Admin::RidesController.sortable? && ::Refinery::Rides::Ride.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Rides"),
+                 refinery.rides_admin_rides_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Rides"),
+                 refinery.rides_admin_rides_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

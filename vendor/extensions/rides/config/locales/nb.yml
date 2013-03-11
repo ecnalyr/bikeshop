@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      rides:
+        title: Rides
+    rides:
+      admin:
+        rides:
+          actions:
+            create_new: Lag en ny Ride
+            reorder: Endre rekkefølgen på Rides
+            reorder_done: Ferdig å endre rekkefølgen Rides
+          records:
+            title: Rides
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Rides enda. Klikk på "Lag en ny Ride" for å legge til din første ride.
+          ride:
+            view_live_html: Vis hvordan denne ride ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne ride
+            delete: Fjern denne ride permanent
+      rides:
+        show:
+          other: Andre Rides
+  activerecord:
+    attributes:
+      'refinery/rides/ride':
+        name: Name
+        time: Time
+        phone: Phone
+        location: Location
+        description: Description

@@ -1,0 +1,41 @@
+<%= form_for [refinery, :rides_admin, @ride] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @ride,
+              :include_object_name => true %>
+
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest'  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :time -%>
+    <%= f.date_select :time  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :phone -%>
+    <%= f.text_field :phone  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :location -%>
+    <%= f.text_field :location  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :description -%>
+    <%= f.text_field :description  -%>
+
+  </div>
+  
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.rides.admin.rides.ride'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @ride.name) %>
+<% end -%>
