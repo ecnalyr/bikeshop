@@ -4,8 +4,15 @@
           <%= link_to Refinery::Core.site_name, refinery.root_path %>
         </h1>
         <p><i i class="foundicon-phone"></i>(361) 993-7000</p>
-        <p><i i class="foundicon-location"></i>6020 S. Padre Island Dr., Corpus Christi, TX 78412</p>
-        <p><i i class="foundicon-clock"></i>Open today until 7pm (more. . .)</p>
+        <p><i i class="foundicon-location"></i><%= link_to "6020 S. Padre Island Dr., Corpus Christi, TX 78412", "https://maps.google.com/maps?q=Bay+Area+Bicycles,+6020+South+Padre+Island+Drive,+Corpus+Christi,+TX&hl=en&sll=27.800583,-97.396381&sspn=1.048343,2.113495&t=m&fb=1&gl=us&hq=Bay+Area+Bicycles,&hnear=0x8668f5dd37419e07:0x805a44053f4a7c1a,6020+S+Padre+Island+Dr,+Corpus+Christi,+TX+78412&cid=0,0,3586415949757186579&z=16&iwloc=A"  %></p>
+        <p><i i class="foundicon-clock"></i><%= todays_hours %> <a href="#" data-reveal-id="hoursModal">(more. . .)</a></p>
+        <div id="hoursModal" class="reveal-modal">
+             <h1>Hours:</h1>
+                Monday - Friday: 10am - 7pm</br>
+                Saturday: 9am - 5pm</br>
+                Sunday: Closed</br>
+             <a class="close-reveal-modal">&#215;</a>
+        </div>
     </div>
 </div>
 <%= render(:partial => "/refinery/menu", :locals => {
